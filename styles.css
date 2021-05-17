@@ -142,6 +142,7 @@ navbar{
 .part2 img{
   float: left;
   padding-left: 20px;
+  padding-rigth:20px;
   height: 150px;
 }
 .part2 a{
@@ -353,6 +354,8 @@ navbar{
   }
   .part2 img{
     width: 100%;
+    padding-left:2%;
+    padding-right:2%;
   }
   .part22{
     position: absolute;
