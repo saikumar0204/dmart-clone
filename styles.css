@@ -325,6 +325,12 @@ footer{
   text-decoration: none;
 }
 
+@media(min-width:1350px){
+  .lastone{
+    position: absolute;
+    top: 3500px;
+  }
+}
 @media(max-width:1250px) and (min-width:1050px){
   .logo{
     margin-left: -5px;
