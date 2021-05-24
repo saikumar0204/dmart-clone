@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@200;400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+}
+navbar{
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+  margin-bottom: 5px;
+}
+.first{
+  position: fixed;
+  display: inline-block;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.main{
+  position: relative;
+  top: -4px;
+  display: block;
+  z-index: -10;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo{
+  margin-left: 60px;
+  margin-top: 30px;
+  height: 40px;
+  margin-bottom: 20px;
+  
+}
+.addons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  list-style: none;
+}
+
+.addons li a{
+  text-decoration: none;
+  height: 100px;
+  background: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  padding: 40px 25px 10px;
+  margin-top: 0;
+  color: black;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+
+.addons li a:hover{
+  background: rgb(165, 221, 165);
+  cursor: pointer;
+}
+
+.social {
+  position: absolute;
+  display: flex;
+  list-style: none;
+  right: 60px;
+  top: 23px;
+}
+
+.social li {
+  
+  text-decoration: none;
+  margin-right: 0px;
+ 
+}
+
+.sc{
+  width: 35px;
+  height: 35px;
+}
+
+.main marquee{
+  position: relative;
+  top: 105px;
+  background: lightgreen;
+  padding-block: 10px;
+  box-shadow:inset  0 3px 3px 0px  green;
+}
+/* main image code */
+.coll{
+  position: relative;
+  margin-top: 100px;
+  margin-left: 0;
+  margin-right: 0;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+}
+.menu{
+  display: none;
+}
+.link-logo{
+  display: inline-block;
+   width: 24px;
+   height: 24px;
+  margin-top: 5px;
+  margin-right: 50px;
+}
+.part2{
+  width: 90%;
+  position: absolute;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.part2 hr{
+  margin-bottom: 2%;
+}
+.head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.head2{
+  line-height: 1.43;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  border-bottom: 2px solid #046d38  ;
+  padding-bottom: 2px;
+}
+
+.quickbox{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
+.quickbox img{
+  width: 400px;
+  height: 150px;
+}
+.textbox{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+ 
+}
+.textbox a{
+  color: white;
+  background-color: #046d38;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  width: auto;
+    height: 34px;
+    padding: 0 8px;
+    min-width: 34px;
+    border-radius: 17px;
+}
+
+.part22,
+.part24{
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+@media(max-width:1250px) and (min-width:1050px){
+  .logo{
+    margin-left: -5px;
+  margin-top: 35px;
+  height: 30px;
+  margin-bottom: 20px;
+  } 
+  .first{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+  .addons li{
+    min-width: 100px;
+  }
+  .addons li a{
+    font-size: medium;
+    padding: 45px 1px 20px;
+    margin-left: 10px;
+  }
+  .sc{
+    width: 45px;
+    height: 45px;
+  }
+  .social{
+    position: relative;
+    margin-top: 10%;
+  }
+}
+
+@media(max-width:1050px) and (min-width:960px){
+  .addons li{
+    font-size: medium;
+    min-width: 80px;
+  }
+  .logo{
+    margin-left: -15px;
+  margin-top: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+  } 
+  .first{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  .addons li a{
+    font-size: 12px;
+    padding: 45px 15px 10px;
+  }
+  .sc{
+    width: 30px;
+    height: 35px;
+  }
+  .social{
+    right: 30px;
+    top: 28px;
+  }
+
+}
+@media(max-width:960px)
+{
+  .first{
+    height: 55px;
+    background: white;
+  }
+  .logo{
+    height: 25px;
+    margin-top:17px;
+    margin-left: 20px;
+  }
+  .social{
+    top: 13px;
+  }
+  .addons{
+    display: none;
+  }
+  .toggle{
+    position: relative;
+    width: 20px;
+    background:url(menu.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: left;
+    margin-left: 10px;
+    margin-top: 3px;
+    cursor: pointer;
+  }
+  .main marquee{
+    position: absolute;
+    margin-top: 0px;
+    top: 55px;
+  }
+  .coll{
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .high.active{
+    position: absolute;
+    left: 200px;
+  }
+  .menu{
+    display: none;
+  }
+
+  .container.active{
+    opacity: 0.8;
+  }
+  .menu.active{
+    z-index: 1000;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    overflow-y: auto;
+  }
+  
+  
+  .menu ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    display: block;
+    width: 200px;
+    height: 60px;
+    
+    padding-top: 25px;
+  }
+  .menu ul li a b{
+    cursor: text;
+  }
+  .side-head{
+    text-align: left;
+  }
+  .menu ul li a img{
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    margin-top: -5px;
+    opacity: 0.6;
+  }
+  
+  .menu ul li a:hover{
+    background-color: rgb(221, 210, 210);
+  }
+  .head2{
+    font-size: medium;
+  }
+
+}
+@media(max-width:960px){
+  .part2{
+    top: 490px ;
+  }
+  .part21 img,
+  .part23 img{
+    width: 150px;
+    object-fit: none;
+  }
+  .part22 img,
+  .part24 img{
+    width: 200px;
+    object-fit: none;
+  }
+}
+@media(max-width:900px){
+  .part2{
+    top: 470px ;
+  }
+}
+@media(max-width:850px){
+  .part2{
+    top: 450px ;
+  }
+}
+@media(max-width:800px){
+  .part2{
+    top: 400px ;
+  }
+}
+@media(max-width:750px){
+  .part2{
+    top: 400px ;
+  }
+}
+@media (max-width:700px) {
+  .part2{
+    top: 350px;
+  }
+}
+@media (max-width:600px) {
+  .part2{
+    top: 300px;
+  }
+  .quickbox{
+    flex-direction: column;
+  }
+  .quickbox img{
+    width: 100%;
+  }
+  hr{
+    margin:1rem 0;
+  }
+}
+@media (max-width:450px) {
+  .part2{
+    top: 250px;
+  }
+}
+@media (max-width:330px) {
+  .part2{
+    top: 200px;
+  }
+}
+
