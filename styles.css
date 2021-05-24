@@ -137,7 +137,7 @@ navbar{
   margin-bottom: 2%;
   text-align: center;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   border-bottom: 2px solid #046d38  ;
   padding-bottom: 2px;
@@ -192,7 +192,7 @@ navbar{
   
 }
 .part3>div{
-  margin-right: 3%;
+  margin-right: 3.5%;
   margin-top: 2%;
 }
 .part3 img{
@@ -227,6 +227,103 @@ navbar{
   text-overflow: ellipsis;
 }
 
+.part4{
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 3%; */
+}
+
+.part4>div{
+  margin-right: 3%;
+  margin-bottom: 3%;
+}
+.storebox{
+  display: block;
+  width: 22%;
+  height: 200px;
+  border-radius: 1rem;
+  /* box-shadow: 0 0 10px red; */
+}
+.storebox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.storebox h4{
+  display: block;
+  background-color: #374553;
+  height: 2rem;
+  width:100%;
+  position: relative;
+  color: white;
+  bottom: 2rem;
+  font-size: 0.75rem;
+  opacity: 0.8;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  text-align: center;
+  padding: 8px 0;
+}
+.part5{
+  box-sizing: border-box;
+  width: 100%;
+}
+.part5 img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  z-index: -100;
+}
+.head3{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.heading{
+  text-decoration: none;
+  color: white;
+  /* width: 200px; */
+  border-bottom: 2px solid white;
+  position: relative;
+  bottom: 250px;
+  text-transform: uppercase;
+  font-size: large;
+}
+.part5main{
+  margin-left: 3%;
+  display: flex;
+  gap: 3%;
+  position: relative;
+  bottom: 200px;
+  color: white;
+}
+.part5main a{
+  text-decoration: none;
+  color: white;
+}
+.part5main a:hover{
+  border-bottom: 2px solid white;
+}
+.contactbox{
+  width: 30%;
+}
+footer{
+  background-color: #384552;
+  position: relative;
+  bottom: 140px;
+}
+.last ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  color: white;
+  gap: 3rem;
+  padding: 1rem 0;
+}
+.last ul li{
+  text-decoration: none;
+}
 
 @media(max-width:1250px) and (min-width:1050px){
   .logo{
@@ -255,6 +352,10 @@ navbar{
   .social{
     position: relative;
     margin-top: 10%;
+  }
+  .lastone{
+    position: absolute;
+    top: 3300px;
   }
 }
 
@@ -286,6 +387,10 @@ navbar{
   .social{
     right: 30px;
     top: 28px;
+  }
+  .lastone{
+    position: absolute;
+    top: 3300px;
   }
 
 }
@@ -402,15 +507,31 @@ navbar{
     width: 200px;
     object-fit: none;
   }
+  footer ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lastone{
+    position: absolute;
+    top: 3200px;
+  }
+
+
 }
 @media(max-width:900px){
   .part2{
     top: 470px ;
   }
+  
 }
 @media(max-width:850px){
   .part2{
     top: 450px ;
+  }
+  .lastone{
+    position: absolute;
+    top: 3200px;
   }
 }
 @media(max-width:800px){
@@ -423,10 +544,21 @@ navbar{
   .part31{
     padding-bottom: 1.1rem;
   }
+  .storebox{
+    height: 150px;
+  }
+  .lastone{
+    position: absolute;
+    top: 3000px;
+  }
 }
 @media(max-width:750px){
   .part2{
     top: 400px ;
+  }
+  .lastone{
+    position: absolute;
+    top: 2900px;
   }
 }
 @media (max-width:700px) {
@@ -439,6 +571,10 @@ navbar{
   /* .placebox{
     height: 100px;
   } */
+  .lastone{
+    position: absolute;
+    top: 2800px;
+  }
 }
 @media (max-width:600px) {
   .part2{
@@ -454,23 +590,57 @@ navbar{
   hr{
     margin:1rem 0;
   }
-  /* .placebox img{
-    width: 100%;
-    height: 70%;
-    margin-bottom: -1.5rem;
-  } */
   .placebox{
     width: 100%;
+  }
+  /* .part4{
+  flex-direction: column;
+  gap: 2rem;
+  } */
+  .storebox{
+    width: 46%;
+    height: 200px;
+  }
+  .storebox h4{
+    width:100%;
+  }
+  .part5main{
+    flex-direction: column;
+  }
+  .contactbox{
+    width: 100%;
+  }
+  .lastone{
+    position: absolute;
+    top: 5200px;
   }
 }
 @media (max-width:450px) {
   .part2{
     top: 250px;
   }
+  .storebox{
+    height: 150px;
+    
+  }
+  .storebox h4{
+    height: 40px;
+    position: relative;
+    bottom: 40px;
+  }
+  .lastone{
+    position: absolute;
+    top: 4600px;
+  }
 }
 @media (max-width:330px) {
   .part2{
     top: 200px;
   }
+  .lastone{
+    position: absolute;
+    top: 4450px;
+  }
 }
+
 
